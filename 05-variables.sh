@@ -4,4 +4,8 @@ echo "please enter username"
 
 read -s USERNAME
 
-echo "username: $USERNAME"
+echo "please enter password"
+
+read -s PASSWORD
+
+echo "username: $USERNAME PASSWORD: $PASSWORD"
