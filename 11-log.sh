@@ -8,6 +8,8 @@ N="\e[0m"
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
+echo "script started executing at $TIMESTAMP" &>> $LOGFILE
+
 echo "script name: $0"
 
 VALIDATE(){
@@ -32,6 +34,6 @@ yum install mysql -y &>> $LOGFILE
 
 VALIDATE $? "Installing mysql"
 
-yum install gity -y &>> $LOGFILE
+yum install git -y &>> $LOGFILE
 
 VALIDATE $? "Installing git"
