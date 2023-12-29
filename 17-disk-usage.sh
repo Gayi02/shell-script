@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DISK_USAGE=$(df -hT | grep -vE "tem|file')
+DISK_USAGE=$(df -hT | grep -vE 'tmp|file')
 DISK_THRESHOLD=1
 message=""
 
